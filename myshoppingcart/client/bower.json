@@ -1,0 +1,33 @@
+{
+  "name": "angular-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "angular-loader": "~1.5.0",
+    "angular-mocks": "~1.5.0",
+    "html5-boilerplate": "^5.3.0",
+    "angular-ui-router": "~0.3.2",
+    "angular-bootstrap": "~2.4.0",
+    "bootstrap": "^3.3.7",
+    "angular-ui-select": "0.19.6",
+    "angular-sanitize": "1.6.1",
+    "angular-jk-rating-stars": "^1.0.3",
+    "angular-awesome-slider": "ng-slider#^2.4.4",
+    "angular-rateit": "^3.0.2",
+    "angularjs-slider": "^6.0.0",
+    "angularMultipleSelect": "angular-multiple-select#^1.1.2",
+    "isteven-angular-multiselect": "^4.0.0",
+    "ngstorage": "ng-storage#^0.4.2",
+    "angular-resource": "1.6.2",
+    "ez-plus": "^1.2.2",
+    "angular-ez-plus": "^1.2.2"
+  },
+  "resolutions": {
+    "angular": "~1.5.0"
+  }
+}

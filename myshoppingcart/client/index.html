@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MyShoppingCart</title>
+  <base href="/">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css">
+  <link rel="stylesheet" href="bower_components/angular-jk-rating-stars/dist/jk-rating-stars.css">
+
+  <link rel="stylesheet" href="app/css/app.css">
+  <link rel="stylesheet" href="app/css/custom.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/angular-rateit/dist/ng-rateit.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/angular-awesome-slider/dist/css/angular-awesome-slider.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/angularjs-slider/dist/rzslider.min.css">
+  <link href="bower_components/angularMultipleSelect/build/multiple-select.min.css" rel="stylesheet">
+  <link href="bower_components/isteven-angular-multiselect/isteven-multi-select.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="app/script_files/magnifier/magnifier.css">
+  <link href="bower_components/ez-plus/css/jquery.ez-plus.css" rel="stylesheet">
+  <link href="node_modules/ng-table/bundles/ng-table.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <!--<div class="hContainer" ng-include="'app/partials/header.html'"></div>-->
+  <div class="hContainer">
+    <my-header>
+
+    </my-header>
+  </div>
+
+  <!--<div  class="nav">
+    <li><a href="#!/view1">view1</a></li>
+    <li><a href="#!/view2">view2</a></li>
+  </div>-->
+
+<br>
+  <!--<div>Angular seed app: v<span app-version></span></div>-->
+  <div  class="container">
+    <div class="statecontent" ui-view></div>
+
+  </div>
+  <div ng-include="'app/partials/footer.html'"></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-ui-select/dist/select.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-jk-rating-stars/dist/jk-rating-stars.js"></script>
+  <script src="app/modules/header/header.module.js"></script>
+  <script src="app/modules/header/header.controller.js"></script>
+  <script src="node_modules/ng-table/bundles/ng-table.min.js"></script>
+
+  <script src="app/modules/app.module.js"></script>
+  <script src="app/modules/app.config.js"></script>
+  <script src="app/modules/app.run.js"></script>
+  <script src="app/modules/app.factory.js"></script>
+  <script src="app/modules/app.resources.js"></script>
+  <script src="app/modules/app.constants.js"></script>
+
+
+  <script src="app/modules/home/home.module.js"></script>
+  <script src="app/modules/home/home.factory.js"></script>
+  <script src="app/modules/home/home.controller.js"></script>
+  <script src="app/modules/home/toprated5products.directive.js"></script>
+
+  <script src="app/modules/viewProduct/viewProduct.module.js"></script>
+  <script src="app/modules/viewProduct/viewProduct.controller.js"></script>
+  <script src="app/modules/viewProduct/viewProduct.directive.js"></script>
+  <script src="app/modules/viewProduct/viewProductComments.component.js"></script>
+  <script src="app/modules/viewProduct/productDetails.component.js"></script>
+  <script src="app/modules/viewProduct/viewProduct.factory.js"></script>
+
+  <script src="app/modules/viewProduct/viewProductImgPrice.component.js"></script>
+  <!-- <script src="app/modules/viewProduct/zoomProduct.js"></script> -->
+
+  <script src="app/modules/header/header.module.js"></script>
+  <script src="app/modules/header/header.directive.js"></script>
+  <script src="app/modules/header/header.controller.js"></script>
+  <script src="app/modules/header/header.factory.js"></script>
+  <script src="app/modules/header/register.controller.js"></script>
+  <script src="app/modules/header/resetPasswordController.controller.js"></script>
+
+  <script src="app/modules/header/search.component.js"></script>
+
+  <script src="app/modules/electronics/electronics.module.js"></script>
+  <script src="app/modules/electronics/electronics.controller.js"></script>
+  <script src="app/modules/electronics/allProducts.component.js"></script>
+  <script src="app/modules/electronics/filter.component.js"></script>
+  <script src="app/modules/electronics/productsDisplay.factory.js"></script>
+
+  <script src="app/modules/books/books.module.js"></script>
+  <script src="app/modules/books/books.controller.js"></script>
+
+  <!--<script src="app/modules/app.config.js"></script>
+  <script src="app/modules/app.run.js"></script>
+
+-->
+  <script src="app/modules/user/userProfile.module.js"></script>
+  <script src="app/modules/user/userProfile.controller.js"></script>
+  <script src="app/modules/user/userFactory.factory.js"></script>
+
+
+  <script src="app/components/version/version.js"></script>
+  <script src="app/components/version/version-directive.js"></script>
+  <script src="app/components/version/interpolate-filter.js"></script>
+  <script src="bower_components/angular-rateit/dist/ng-rateit.js"></script>
+  <script type="text/javascript" src="bower_components/angular-awesome-slider/dist/angular-awesome-slider.min.js"></script>
+  <script src="bower_components/angularMultipleSelect/build/multiple-select.min.js"></script>
+  <script type="text/javascript" src="bower_components/angularjs-slider/dist/rzslider.min.js"></script>
+  <script src="bower_components/isteven-angular-multiselect/isteven-multi-select.js"></script>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/ez-plus/src/jquery.ez-plus.js"></script>
+  <script src="bower_components/angular-ez-plus/js/angular-ezplus.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.min.js"></script>
+
+  <script type="text/javascript" src="app/script_files/magnifier/magnifier.js"></script>
+  <script type="text/javascript" src="app/script_files/magnifier/event.js"></script>
+
+  <!--
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</body>
+</html>

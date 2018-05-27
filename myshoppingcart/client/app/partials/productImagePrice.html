@@ -1,0 +1,19 @@
+<div class="row">
+    <!-- -&#45;&#45;ooooo{{pip.picPath}}-->
+    <div class="row">
+       <!-- {{pip.product}}// product
+        {{pip.product[0].type}}//-->
+
+        <img class="proim col-lg-12 col-xs-12 col-sm-12 col-md-12" ng-if="pip.product.type == 'electronics'" src="images/{{pip.product.subType}}/{{pip.product.productId}}.jpg"><br>
+        <img class="proim col-lg-12 col-xs-12 col-sm-12 col-md-12" ng-if="pip.product.type == 'books'" src="images/books/{{pip.product.productId}}.jpg"><br>
+
+    </div>
+
+    <div class="row"> <span  class="col-lg-12 col-xs-12 col-sm-12 col-md-12">price : {{pip.product.productPrice | currency:'&#8377;'}}</span></div>
+    <div class="row"><label  class="col-lg-12 col-xs-12 col-sm-12 col-md-12">Rating</label>{{pip.product.rating}}
+    <!--<jk-rating-stars rating="vpc.product.rating" read-only="true" on-rating="vpc.onRating(rating)" >
+</jk-rating-stars>-->
+    <ng-rate-it min = 0 max = 5 read-only = "true" ng-model=pip.product.rating >
+    </ng-rate-it></div>
+</div>
+

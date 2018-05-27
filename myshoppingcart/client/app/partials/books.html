@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Your are in books page </h1>
+<h2></h2>
+<!-- -&#45;&#45;&#45;&#45;{{ec.type}}-->
+<div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-3">
+        <product-filter value=10 product-type="{{bc.type}}" product-list="bc.productList" brand-list="bc.brandList" selected-brand-list="bc.selectedBrands" offers-list="bc.allOffers">
+
+        </product-filter>
+    </div>
+
+    <div class="col-xs-8 col-sm-8 col-md-9">
+
+        <display-all-products product-list="bc.productList" product-type="{{bc.type}}">
+
+        </display-all-products>
+    </div>
+</div>
+
+</body>
+</html>

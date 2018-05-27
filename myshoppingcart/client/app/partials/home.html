@@ -1,0 +1,56 @@
+<h1>Your are in Home page </h1>
+<div class="top5products">
+    <h2>Top rated products</h2>
+
+    <!--<div id="mobiles" class="row">
+        <h3>Mobiles</h3>
+            <div ui-sref="product({ id : product.id })" class="products col-md-3" ng-repeat="product in products | orderBy:'-rating' | filter: { subType: 'mobile'} | limitTo:5">
+                &lt;!&ndash;<div class="container">&ndash;&gt;
+                    <img  src="images/mobile/{{ product.id }}.jpg"><span>{{product.name}}</span>
+                    <label>Cost:</label><span>{{product.price | currency:'&#8377;'}}</span>
+                    <label>Rating:</label><jk-rating-stars class="rating" rating="product.rating" read-only="true"></jk-rating-stars>
+                &lt;!&ndash;</div>&ndash;&gt;
+            </div>
+    </div>-->
+    <h3>Mobiles</h3>
+    <div class="row">
+        <top-rated-directive product-list="hc.mobileProducts" product-type="mobile">
+
+        </top-rated-directive>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <h3>Laptops</h3>
+    <div class="row">
+    <top-rated-directive product-list="hc.laptopProducts" product-type="laptop">
+    </top-rated-directive>
+        </div>
+    <!--<div id="laptops" class="row">-->
+        <!--<h3>Laptops</h3>-->
+            <!--<div ui-sref="product({ id : product.id })"class="products col-md-3" ng-repeat="product in products | orderBy:'-rating' | filter: { subType: 'laptop'} | limitTo:5">-->
+                <!--<img src="images/laptop/{{ product.id }}.jpg"><span>{{product.name}}</span>-->
+                <!--Cost:<span>{{product.price | currency:'&#8377;'}}</span>-->
+                <!--Rating:<jk-rating-stars class="rating" rating="product.rating" read-only="true"></jk-rating-stars>&nbsp;&nbsp;-->
+                <!--&nbsp;&nbsp;-->
+            <!--</div>-->
+    <!--</div>-->
+
+
+</div>
+<!-- to display top rated mobile-->
+<!--<div class="col-sm-10 col-md-10">
+    <h1>Top Rated Items</h1>
+    <hr>
+    <div class = "imgRepeat" ng-repeat="product in products | orderBy : '-rating' | limitTo: 10 | filter: { subType: 'mobile' }" >
+
+        <figure class="img">
+            <img ng-src="{{'../data/images/'+product.id+'.jpg'}} " ng-alt="{{results.name}}" ng-title="{{product.name}}" class="img-thumbnail" width="120" height="120" style="border:0px;margin:0px;"/>&lt;!&ndash;style="border:0px;margin:0px;"&ndash;&gt;
+        </figure>
+        {{product.name}}<br/>
+        Price : {{product.price | currency:'&#8377;'}}<br/>
+        Rating : {{product.rating}}
+
+    </div>
+    </div>-->
